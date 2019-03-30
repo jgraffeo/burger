@@ -3,19 +3,22 @@
 <img src="/public/assets/imgs/burger_logo.jpg">
 
 <ul>
-  {{#each burgers}}
+
+  {{#each allBurgers}}
     {{#unless this.devoured}}
-    <div>
-      <form action="/burgers/{{this.id}}?_method=PUT" method="POST">
-        <button type="submit" class='burgersubmit'> {{this.burger_name}}</button>
-      </form>
-    </div>
-  {{/unless}}
+      <div>
+        <button class='addButton' value={{id}}>{{burger_name}}</button>
+        {{!-- <form class="change-devour">
+          <input class="devoured" type="hidden" value={{id}}>
+          <button type="submit" class="addbutton"> {{burger_name}}<button>
+        </form> --}}
+      </div>
+    {{/unless}}
   {{/each}}
 </ul>
 
 <ul>
-  {{#each burgers}}
+  {{#each allBurgers}}
     {{#if devoured}}
       <div class='burgerEaten'>
           <div>
