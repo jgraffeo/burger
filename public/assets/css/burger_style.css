@@ -1,0 +1,18 @@
+.addburger {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+.toeat {
+    background-color: green;
+}
+
+.body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center !important;
+}
+
+.burgerlogo {
+    width: 50%;
+    height: auto;
+}
